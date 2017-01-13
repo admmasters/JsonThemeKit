@@ -1,0 +1,2 @@
+language: objective-c
+script: xctool run-tests -project JSONThemeKit/JSONThemeKit.xcodeproj -scheme JSONThemeKit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO 
