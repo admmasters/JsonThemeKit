@@ -10,27 +10,69 @@ import XCTest
 @testable import JSONThemeKit
 
 class JSONThemeKitTests: XCTestCase {
+  lazy var testBundle: Bundle = Bundle(for: type(of: self))
+  func testThatTintColorCanBeSet() {
     
-    override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    let jsonData: [String: String] = try! testBundle.getJSONData(filename: "MockColorSettings.json")
+    let theme = JSONTheme(json: jsonData)
+    let actual = theme!.tintColor
+    
+    XCTAssert(actual.naiveIsEqual(.red), "\(actual) is not red")
+    
+  }
+  /*
+  func testThatWeCanSetTintColor() {
+    
+    guard let jsonData = getNormalMockColorSettings()
+      else { return XCTFail("Can't read JSON") }
+    
+    guard let theme = JSONTheme(json: jsonData)
+      else { return XCTFail("Can't create Color Object") }
+    
+    let expected = "#FF0000".toColor()
+    let actual = theme.tintColor
+    
+    assert(actual.naiveIsEqual(expected), "\(actual) is not equal to \(expected))")
+    
+  }
+  
+  func testThatWeCanSetBarTintColor() {
+    
+    guard let jsonData = getNormalMockColorSettings()
+      else { return XCTFail("Can't read JSON") }
+    
+    guard let theme = JSONTheme(json: jsonData)
+      else { return XCTFail("Can't create Color Object") }
+    
+    let expected = "#00FF00".toColor()
+    let actual = theme.barTintColor
+    
+    assert(actual.naiveIsEqual(expected), "\(actual) is not equal to \(expected))")
+    
+  }
+  
+  func testThatWeCanSetStatusBarStyle() {
+    
+    guard let jsonData = getNormalMockColorSettings()
+      else { return XCTFail("Can't read JSON") }
+    
+    guard let theme = JSONTheme(json: jsonData)
+      else { return XCTFail("Can't create Color Object") }
+    
+    let expected: UIStatusBarStyle = .lightContent
+    let actual: UIStatusBarStyle = theme.statusBarStyle
+    
+    assert(actual == expected, "\(actual) is not equal to \(expected))")
+    
+  }
+  
+  private func getNormalMockColorSettings() -> [String: Any] {
+    let testBundle = Bundle(for: type(of: self))
+    do {
+      let result: [String: Any] = try testBundle.getJSONData(filename: "MockColorSettings.json")
+      return result
+    } catch {
+      return nil
     }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
-    
+  }*/
 }

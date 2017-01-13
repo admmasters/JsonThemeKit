@@ -10,6 +10,16 @@
 		DF17F6961E27FC9E00A0DD98 /* JSONThemeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF17F68C1E27FC9E00A0DD98 /* JSONThemeKit.framework */; };
 		DF17F69B1E27FC9E00A0DD98 /* JSONThemeKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F69A1E27FC9E00A0DD98 /* JSONThemeKitTests.swift */; };
 		DF17F69D1E27FC9E00A0DD98 /* JSONThemeKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DF17F68F1E27FC9E00A0DD98 /* JSONThemeKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF17F6AB1E27FED300A0DD98 /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6AA1E27FED300A0DD98 /* StringExtensions.swift */; };
+		DF17F6AF1E27FEFF00A0DD98 /* ColorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6AE1E27FEFF00A0DD98 /* ColorConvertible.swift */; };
+		DF17F6B11E27FF0E00A0DD98 /* StringExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6B01E27FF0E00A0DD98 /* StringExtensionsTests.swift */; };
+		DF17F6B31E28043600A0DD98 /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6B21E28043600A0DD98 /* TestHelpers.swift */; };
+		DF17F6E01E28275600A0DD98 /* BundleExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6DF1E28275600A0DD98 /* BundleExtensions.swift */; };
+		DF17F6E21E28281100A0DD98 /* BundleExtensionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6E11E28281100A0DD98 /* BundleExtensionsTests.swift */; };
+		DF17F6E51E2829BC00A0DD98 /* Mock.json in Resources */ = {isa = PBXBuildFile; fileRef = DF17F6E31E28298F00A0DD98 /* Mock.json */; };
+		DF17F6E71E28363C00A0DD98 /* FakeMock in Resources */ = {isa = PBXBuildFile; fileRef = DF17F6E61E28363C00A0DD98 /* FakeMock */; };
+		DF17F6EA1E28394F00A0DD98 /* JSONThemeKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF17F6E91E28394F00A0DD98 /* JSONThemeKit.swift */; };
+		DF17F6EC1E28E0CD00A0DD98 /* MockColorSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = DF17F6EB1E28E0CD00A0DD98 /* MockColorSettings.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +39,16 @@
 		DF17F6951E27FC9E00A0DD98 /* JSONThemeKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSONThemeKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF17F69A1E27FC9E00A0DD98 /* JSONThemeKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONThemeKitTests.swift; sourceTree = "<group>"; };
 		DF17F69C1E27FC9E00A0DD98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DF17F6AA1E27FED300A0DD98 /* StringExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StringExtensions.swift; path = Source/helpers/StringExtensions.swift; sourceTree = SOURCE_ROOT; };
+		DF17F6AE1E27FEFF00A0DD98 /* ColorConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorConvertible.swift; path = Source/helpers/ColorConvertible.swift; sourceTree = SOURCE_ROOT; };
+		DF17F6B01E27FF0E00A0DD98 /* StringExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtensionsTests.swift; sourceTree = "<group>"; };
+		DF17F6B21E28043600A0DD98 /* TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TestHelpers.swift; path = Source/helpers/TestHelpers.swift; sourceTree = SOURCE_ROOT; };
+		DF17F6DF1E28275600A0DD98 /* BundleExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BundleExtensions.swift; path = Source/helpers/BundleExtensions.swift; sourceTree = SOURCE_ROOT; };
+		DF17F6E11E28281100A0DD98 /* BundleExtensionsTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleExtensionsTests.swift; sourceTree = "<group>"; };
+		DF17F6E31E28298F00A0DD98 /* Mock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Mock.json; path = JSONThemeKitTests/Mock.json; sourceTree = SOURCE_ROOT; };
+		DF17F6E61E28363C00A0DD98 /* FakeMock */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FakeMock; sourceTree = "<group>"; };
+		DF17F6E91E28394F00A0DD98 /* JSONThemeKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = JSONThemeKit.swift; path = Source/JSONThemeKit.swift; sourceTree = SOURCE_ROOT; };
+		DF17F6EB1E28E0CD00A0DD98 /* MockColorSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = MockColorSettings.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +91,7 @@
 		DF17F68E1E27FC9E00A0DD98 /* JSONThemeKit */ = {
 			isa = PBXGroup;
 			children = (
+				DF17F6A61E27FD7400A0DD98 /* Source */,
 				DF17F68F1E27FC9E00A0DD98 /* JSONThemeKit.h */,
 				DF17F6901E27FC9E00A0DD98 /* Info.plist */,
 			);
@@ -80,10 +101,43 @@
 		DF17F6991E27FC9E00A0DD98 /* JSONThemeKitTests */ = {
 			isa = PBXGroup;
 			children = (
+				DF17F6E81E28364F00A0DD98 /* mocks */,
 				DF17F69A1E27FC9E00A0DD98 /* JSONThemeKitTests.swift */,
 				DF17F69C1E27FC9E00A0DD98 /* Info.plist */,
+				DF17F6B01E27FF0E00A0DD98 /* StringExtensionsTests.swift */,
+				DF17F6B21E28043600A0DD98 /* TestHelpers.swift */,
+				DF17F6E11E28281100A0DD98 /* BundleExtensionsTests.swift */,
 			);
 			path = JSONThemeKitTests;
+			sourceTree = "<group>";
+		};
+		DF17F6A61E27FD7400A0DD98 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				DF17F6A91E27FE2100A0DD98 /* helpers */,
+				DF17F6E91E28394F00A0DD98 /* JSONThemeKit.swift */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		DF17F6A91E27FE2100A0DD98 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DF17F6AE1E27FEFF00A0DD98 /* ColorConvertible.swift */,
+				DF17F6AA1E27FED300A0DD98 /* StringExtensions.swift */,
+				DF17F6DF1E28275600A0DD98 /* BundleExtensions.swift */,
+			);
+			name = helpers;
+			sourceTree = "<group>";
+		};
+		DF17F6E81E28364F00A0DD98 /* mocks */ = {
+			isa = PBXGroup;
+			children = (
+				DF17F6E31E28298F00A0DD98 /* Mock.json */,
+				DF17F6E61E28363C00A0DD98 /* FakeMock */,
+				DF17F6EB1E28E0CD00A0DD98 /* MockColorSettings.json */,
+			);
+			name = mocks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +203,7 @@
 					DF17F68B1E27FC9E00A0DD98 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = LHMA76PWH8;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					DF17F6941E27FC9E00A0DD98 = {
@@ -188,6 +243,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF17F6E51E2829BC00A0DD98 /* Mock.json in Resources */,
+				DF17F6E71E28363C00A0DD98 /* FakeMock in Resources */,
+				DF17F6EC1E28E0CD00A0DD98 /* MockColorSettings.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,6 +256,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF17F6AB1E27FED300A0DD98 /* StringExtensions.swift in Sources */,
+				DF17F6E01E28275600A0DD98 /* BundleExtensions.swift in Sources */,
+				DF17F6EA1E28394F00A0DD98 /* JSONThemeKit.swift in Sources */,
+				DF17F6AF1E27FEFF00A0DD98 /* ColorConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +267,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF17F6B11E27FF0E00A0DD98 /* StringExtensionsTests.swift in Sources */,
 				DF17F69B1E27FC9E00A0DD98 /* JSONThemeKitTests.swift in Sources */,
+				DF17F6B31E28043600A0DD98 /* TestHelpers.swift in Sources */,
+				DF17F6E21E28281100A0DD98 /* BundleExtensionsTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +387,7 @@
 		DF17F6A11E27FC9E00A0DD98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LHMA76PWH8;
@@ -335,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.mattrevell.JSONThemeKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -342,6 +409,7 @@
 		DF17F6A21E27FC9E00A0DD98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = LHMA76PWH8;
@@ -362,6 +430,7 @@
 		DF17F6A41E27FC9E00A0DD98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LHMA76PWH8;
 				INFOPLIST_FILE = JSONThemeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -374,6 +443,7 @@
 		DF17F6A51E27FC9E00A0DD98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = LHMA76PWH8;
 				INFOPLIST_FILE = JSONThemeKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
