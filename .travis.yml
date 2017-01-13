@@ -1,6 +1,2 @@
-osx_image: xcode8
 language: objective-c
-env:
-  - ACTION=test  PLATFORM=iOS     DESTINATION='platform=iOS Simulator,name=iPhone 6S'
-script:
-  - set -o pipefail && xcodebuild -scheme JSONThemeKit -destination "$DESTINATION" $ACTION | xcpretty
+script: xcodebuild test -project JSONThemeKit/JSONThemeKit.xcodeproj -scheme JSONThemeKit -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,name=iPhone 7,OS=10.2'
